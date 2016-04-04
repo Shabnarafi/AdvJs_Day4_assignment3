@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<script>
+	function Animal(noOflegs,habitat){
+		this.noOflegs = noOflegs;
+		this.habitat = habitat;
+
+	}
+	
+	function Rabbit(type,friendly)
+	{
+		this.type = type;
+		this.friendly = friendly ;
+	
+	}
+	
+	var objAnimal = new Animal(4, 'Amazon Forest');
+	
+	var objRabbit = new Rabbit('Bunny','Yes');
+	
+	objRabbit.__proto__ = objAnimal;
+	
+	console.log(objRabbit);
+	
+	
+</script>
+</body>
+</html>
